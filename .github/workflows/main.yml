@@ -19,11 +19,6 @@ jobs:
       uses: ./.github/workflows/fedora26
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora26
-        path: ${{ github.workspace }}/source/binder
 
   compilejobFedora27:
     runs-on: ubuntu-latest
@@ -36,11 +31,6 @@ jobs:
       uses: ./.github/workflows/fedora27
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora27
-        path: ${{ github.workspace }}/source/binder
 
   compilejobFedora28:
     runs-on: ubuntu-latest
@@ -53,11 +43,6 @@ jobs:
       uses: ./.github/workflows/fedora28
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora28
-        path: ${{ github.workspace }}/source/binder
 
   compilejobFedora29:
     runs-on: ubuntu-latest
@@ -70,11 +55,6 @@ jobs:
       uses: ./.github/workflows/fedora29
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora29
-        path: ${{ github.workspace }}/source/binder
 
   compilejobFedora30:
     runs-on: ubuntu-latest
@@ -87,11 +67,6 @@ jobs:
       uses: ./.github/workflows/fedora30
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora30
-        path: ${{ github.workspace }}/source/binder
 
 
   compilejobFedora31:
@@ -105,11 +80,6 @@ jobs:
       uses: ./.github/workflows/fedora31
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora31
-        path: ${{ github.workspace }}/source/binder
 
 
   compilejobFedora32:
@@ -123,11 +93,6 @@ jobs:
       uses: ./.github/workflows/fedora32
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora32
-        path: ${{ github.workspace }}/source/binder
 
   compilejobFedora33:
     runs-on: ubuntu-latest
@@ -140,11 +105,6 @@ jobs:
       uses: ./.github/workflows/fedora33
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora33
-        path: ${{ github.workspace }}/source/binder
 
   compilejobFedora34:
     runs-on: ubuntu-latest
@@ -157,11 +117,6 @@ jobs:
       uses: ./.github/workflows/fedora34
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora34
-        path: ${{ github.workspace }}/source/binder
 
   compilejobFedora35:
     runs-on: ubuntu-latest
@@ -174,11 +129,6 @@ jobs:
       uses: ./.github/workflows/fedora35
     - name: Get the output status
       run: exit ${{ steps.compileindocker.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-fedora35
-        path: ${{ github.workspace }}/source/binder
 
   compilejobOSX:
     runs-on: macos-latest
@@ -191,9 +141,3 @@ jobs:
       run: ./.github/workflows/osx/entrypoint.sh
     - name: Get the output status
       run: exit ${{ steps.compile.outputs.out }}
-    - name: Upload artifact
-      uses: actions/upload-artifact@v2
-      with:
-        name: binder-osx
-        path: ${{ github.workspace }}/source/binder
-
