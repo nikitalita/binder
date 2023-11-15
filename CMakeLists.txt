@@ -12,7 +12,7 @@ set(LLVM_DIR_ORIG ${LLVM_DIR})
 set(Clang_DIR_ORIG ${Clang_DIR})
 # cmake version >= 3.19 includes all our modules
 if(${CMAKE_VERSION} VERSION_LESS "3.19")
-  set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/Modules;${CMAKE_MODULE_PATH}")
+  set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/Modules ${CMAKE_MODULE_PATH})
 else()
   # set CMP0054 to NEW
   # https://cmake.org/cmake/help/latest/policy/CMP0054.html
