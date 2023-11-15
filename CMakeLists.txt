@@ -15,6 +15,7 @@ if(${CMAKE_VERSION} VERSION_LESS "3.19")
   set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake/Modules ${CMAKE_MODULE_PATH})
 else()
   # set CMP0054 to NEW
+  # yes
   # https://cmake.org/cmake/help/latest/policy/CMP0054.html
   cmake_policy(SET CMP0054 NEW)
 endif()
